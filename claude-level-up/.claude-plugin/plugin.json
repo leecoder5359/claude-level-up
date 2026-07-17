@@ -1,0 +1,11 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "claude-level-up",
+  "description": "잭피디 '클로드 코드 레벨업 필수 스킬' 번들. 단일 파일 스킬 3종(frontend-design · humanizer · karpathy-guidelines)을 벤더링해 설치 즉시 활성화하고, 나머지 upstream plugin(superpowers · understand-anything · agentmemory · watch) 설치를 안내한다.",
+  "version": "0.2.1",
+  "author": {
+    "name": "leecoder5359",
+    "email": "leecoder5359@gmail.com"
+  },
+  "keywords": ["skills", "frontend-design", "humanizer", "karpathy", "level-up"]
+}

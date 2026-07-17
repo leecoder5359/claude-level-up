@@ -1,0 +1,59 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ljun-level-up",
+  "metadata": {
+    "description": "잭피디 '클로드 코드 레벨업 필수 스킬' 영상 기반 큐레이션 마켓플레이스. 한 번의 marketplace add로 핵심 스킬 스택을 묶어서 설치한다."
+  },
+  "owner": {
+    "name": "leecoder5359",
+    "email": "leecoder5359@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "claude-level-up",
+      "description": "번들 plugin — 단일 파일 스킬 3종(frontend-design · humanizer · karpathy-guidelines)을 벤더링해 즉시 활성화하고, 나머지 upstream plugin 설치를 안내하는 /level-up-setup 커맨드를 제공한다.",
+      "author": { "name": "leecoder5359" },
+      "source": "./claude-level-up",
+      "category": "productivity"
+    },
+    {
+      "name": "superpowers",
+      "description": "요구사항→계획→테스트→구현→코드리뷰 워크플로우를 강제하는 코어 스킬 라이브러리 (Jesse Vincent, obra). 14개 스킬 + 훅.",
+      "author": { "name": "Jesse Vincent" },
+      "source": { "source": "github", "repo": "obra/superpowers" },
+      "category": "workflow"
+    },
+    {
+      "name": "understand-anything",
+      "description": "프로젝트 전체를 스캔해 파일·함수·의존성 지식 그래프/대시보드를 만드는 plugin. /understand 커맨드 제공 (Egonex-AI).",
+      "author": { "name": "Yuxiang Lin" },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Egonex-AI/Understand-Anything.git",
+        "path": "understand-anything-plugin",
+        "ref": "main"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "agentmemory",
+      "description": "AI 코딩 에이전트용 영속 메모리. 세션 간 결정·맥락을 저장하고 현재 작업과 관련된 기억만 주입한다 (rohitg00).",
+      "author": { "name": "Rohit Ghumare" },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/rohitg00/agentmemory.git",
+        "path": "plugin",
+        "ref": "main"
+      },
+      "category": "productivity"
+    },
+    {
+      "name": "watch",
+      "description": "영상(URL/로컬)을 다운로드·프레임 추출·자막 전사해 Claude가 화면과 내용을 함께 이해하게 한다 (claude-video, Bradley Bonanno).",
+      "author": { "name": "Bradley Bonanno" },
+      "source": { "source": "github", "repo": "bradautomates/claude-video" },
+      "category": "productivity",
+      "homepage": "https://github.com/bradautomates/claude-video"
+    }
+  ]
+}
